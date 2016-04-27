@@ -12,13 +12,6 @@ namespace Patterns_Lab_1.Serialization.Xml
 {
     public class XmlDeserializer : ITimetableDeserializer
     {
-        private readonly string xmlExtension = ".xml";
-
-        public bool Applicable(string extension)
-        {
-            return extension.ToLower() == xmlExtension;
-        }
-
         public Timetable Deserialize(Stream file)
         {
             var serializer = new System.Xml.Serialization.XmlSerializer(typeof(Timetable));

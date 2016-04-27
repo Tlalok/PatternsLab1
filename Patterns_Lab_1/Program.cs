@@ -29,7 +29,7 @@ namespace Patterns_Lab_1
             //    //csvWriter.NextRecord();
             //}
             //return;
-
+            /*
             var timetable = new Timetable
             {
                 buses = new List<BusTimetable>(),
@@ -89,20 +89,21 @@ namespace Patterns_Lab_1
             var listSerialiers = new List<ITimetableSerializer>(2);
             listSerialiers.Add(new XmlSerializer());
             listSerialiers.Add(new CsvSerializer());
-            var writer = new TimetableWriter(listSerialiers);
+            var writer = new TimetableFileWriter(listSerialiers);
 
             writer.Write(timetable, path);
 
             var listDeserializers = new List<ITimetableDeserializer>(2);
             listDeserializers.Add(new XmlDeserializer());
             listDeserializers.Add(new CsvDeserializer());
-            var reader = new TimetableReader(listDeserializers);
+            var reader = new TimetableFileReader(listDeserializers);
 
             timetable = new Timetable();
             timetable = reader.Read(path);
 
             writer.Write(timetable, Path.ChangeExtension(path, ".xml"));
             timetable = reader.Read(Path.ChangeExtension(path, ".xml"));
+            */
         }
     }
 }

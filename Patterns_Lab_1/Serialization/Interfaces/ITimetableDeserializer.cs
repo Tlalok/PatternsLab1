@@ -10,8 +10,6 @@ namespace Patterns_Lab_1.Serialization.Interfaces
 {
     public interface ITimetableDeserializer
     {
-        bool Applicable(string extension);
-
         Timetable Deserialize(Stream file);
     }
 }

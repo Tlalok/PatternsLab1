@@ -12,13 +12,6 @@ namespace Patterns_Lab_1.Serialization.Csv
 {
     public class CsvSerializer : ITimetableSerializer
     {
-        private readonly string csvExtension = ".csv";
-
-        public bool Applicable(string extension)
-        {
-            return extension.ToLower() == csvExtension;
-        }
-
         public void Serialize(Timetable timetable, Stream file)
         {
             using (var stream = new StreamWriter(file))

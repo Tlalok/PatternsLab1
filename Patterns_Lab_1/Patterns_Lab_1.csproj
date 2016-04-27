@@ -49,18 +49,22 @@
     <Compile Include="Models\PlaneTimetable.cs" />
     <Compile Include="Models\Timetable.cs" />
     <Compile Include="Models\TrainTimetable.cs" />
+    <Compile Include="SerializationFactoryContainer.cs" />
     <Compile Include="Serialization\Csv\CsvDeserializer.cs" />
+    <Compile Include="Serialization\Csv\CsvFactory.cs" />
     <Compile Include="Serialization\Csv\TimetableRecord.cs" />
     <Compile Include="Serialization\Csv\TimetableRecordHelper.cs" />
+    <Compile Include="Serialization\Interfaces\ISerializationFactory.cs" />
     <Compile Include="Serialization\Interfaces\ITimetableDeserializer.cs" />
     <Compile Include="Serialization\Xml\XmlDeserializer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Serialization\Csv\CsvSerializer.cs" />
     <Compile Include="Serialization\Interfaces\ITimetableSerializer.cs" />
+    <Compile Include="Serialization\Xml\XmlFactory.cs" />
     <Compile Include="Serialization\Xml\XmlSerializer.cs" />
-    <Compile Include="TimetableReader.cs" />
-    <Compile Include="TimetableWriter.cs" />
+    <Compile Include="TimetableFileReader.cs" />
+    <Compile Include="TimetableFileWriter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
