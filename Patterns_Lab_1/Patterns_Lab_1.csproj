@@ -49,7 +49,7 @@
     <Compile Include="Models\PlaneTimetable.cs" />
     <Compile Include="Models\Timetable.cs" />
     <Compile Include="Models\TrainTimetable.cs" />
-    <Compile Include="SerializationFactoryContainer.cs" />
+    <Compile Include="Serialization\SerializationFactoryContainer.cs" />
     <Compile Include="Serialization\Csv\CsvDeserializer.cs" />
     <Compile Include="Serialization\Csv\CsvFactory.cs" />
     <Compile Include="Serialization\Csv\TimetableRecord.cs" />
@@ -63,8 +63,8 @@
     <Compile Include="Serialization\Interfaces\ITimetableSerializer.cs" />
     <Compile Include="Serialization\Xml\XmlFactory.cs" />
     <Compile Include="Serialization\Xml\XmlSerializer.cs" />
-    <Compile Include="TimetableFileReader.cs" />
-    <Compile Include="TimetableFileWriter.cs" />
+    <Compile Include="FileProcess\TimetableFileReader.cs" />
+    <Compile Include="FileProcess\TimetableFileWriter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

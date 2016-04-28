@@ -1,5 +1,6 @@
 ﻿using Ninject;
 using Patterns_Lab_1;
+using Patterns_Lab_1.Serialization;
 using Patterns_Lab_1.Serialization.Csv;
 using Patterns_Lab_1.Serialization.Interfaces;
 using Patterns_Lab_1.Serialization.Xml;

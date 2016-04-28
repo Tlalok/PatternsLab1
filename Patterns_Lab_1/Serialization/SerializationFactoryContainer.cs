@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Patterns_Lab_1
+namespace Patterns_Lab_1.Serialization
 {
     public class SerializationFactoryContainer
     {

@@ -7,22 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Patterns_Lab_1
+namespace Patterns_Lab_1.FileProcess
 {
-    public class TimetableFileReader
+    public class TimetableFileWriter
     {
         private ISerializationFactory factory;
 
-        public TimetableFileReader(ISerializationFactory factory)
+        public TimetableFileWriter(ISerializationFactory factory)
         {
             this.factory = factory;
         }
 
-        public Timetable Read(string path)
+        public void Write(Timetable timetable, string path)
         {
-            using (var file = File.OpenRead(path))
+            using (var file = File.OpenWrite(path))
             {
-                return factory.CreateDeserializer().Deserialize(file);
+                factory.CreateSerializer().Serialize(timetable, file);
             }
         }
     }
