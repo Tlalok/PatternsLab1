@@ -55,6 +55,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resolver.cs" />
+    <Compile Include="ResolverConfig.cs" />
+    <Compile Include="TimetableRepository.cs" />
+    <Compile Include="TimetableService.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -79,9 +83,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DependencyResolver\DependencyResolver.csproj">
-      <Project>{826f4dbd-06e7-4d3e-86dd-c6635c154dc1}</Project>
-      <Name>DependencyResolver</Name>
+    <ProjectReference Include="..\Patterns_Lab_1\Patterns_Lab_1.csproj">
+      <Project>{2353141d-cc30-4202-8f87-06068a990dc9}</Project>
+      <Name>Patterns_Lab_1</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,4 +1,5 @@
-﻿using Patterns_Lab_1.Models;
+﻿using Patterns_Lab_1.FileProcess.Interfaces;
+using Patterns_Lab_1.Models;
 using Patterns_Lab_1.Serialization.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Patterns_Lab_1.FileProcess
 {
-    public class TimetableFileReader
+    public class TimetableFileReader : ITimetableFileReader
     {
         private ISerializationFactory factory;
 

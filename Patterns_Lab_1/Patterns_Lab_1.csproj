@@ -45,8 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FileProcess\Interfaces\ITimetableReader.cs" />
+    <Compile Include="FileProcess\Interfaces\ITimetableWriter.cs" />
     <Compile Include="Models\BusTimetable.cs" />
-    <Compile Include="Models\PlaneTimetable.cs" />
     <Compile Include="Models\Timetable.cs" />
     <Compile Include="Models\TrainTimetable.cs" />
     <Compile Include="Serialization\SerializationFactoryContainer.cs" />

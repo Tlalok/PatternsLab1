@@ -18,19 +18,19 @@ namespace Patterns_Lab_1.Serialization.Csv
             var records = reader.GetRecords<TimetableRecord>();
             var timetable = new Timetable()
             {
-                buses = new List<BusTimetable>(),
-                trains = new List<TrainTimetable>()
+                Buses = new List<BusTimetable>(),
+                Trains = new List<TrainTimetable>()
             };
             foreach (var record in records)
             {
                 switch (record.Type)
                 {
                     case RecordType.Bus: 
-                        timetable.buses.Add(record.ToBusTimetable());
+                        timetable.Buses.Add(record.ToBusTimetable());
                         break;
 
                     case RecordType.Train: 
-                        timetable.trains.Add(record.ToTrainTimetable());
+                        timetable.Trains.Add(record.ToTrainTimetable());
                         break;
 
                     default:

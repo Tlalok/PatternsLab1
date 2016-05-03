@@ -18,9 +18,9 @@ namespace Patterns_Lab_1.Serialization.Csv
             {
                 var writer = new CsvWriter(stream);
                 writer.WriteHeader<TimetableRecord>();
-                foreach (var record in timetable.buses)
+                foreach (var record in timetable.Buses)
                     writer.WriteRecord(record.ToTimetableRecord());
-                foreach (var record in timetable.trains)
+                foreach (var record in timetable.Trains)
                     writer.WriteRecord(record.ToTimetableRecord());
             }
         }

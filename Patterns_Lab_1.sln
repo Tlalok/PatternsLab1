@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns_Lab_1", "Patterns_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns_Lab_1_UI", "Patterns_Lab_1_UI\Patterns_Lab_1_UI.csproj", "{893C1C96-AF47-41C3-8CB1-027C87790B2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyResolver", "DependencyResolver\DependencyResolver.csproj", "{826F4DBD-06E7-4D3E-86DD-C6635C154DC1}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{893C1C96-AF47-41C3-8CB1-027C87790B2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{893C1C96-AF47-41C3-8CB1-027C87790B2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{893C1C96-AF47-41C3-8CB1-027C87790B2A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{826F4DBD-06E7-4D3E-86DD-C6635C154DC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{826F4DBD-06E7-4D3E-86DD-C6635C154DC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{826F4DBD-06E7-4D3E-86DD-C6635C154DC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{826F4DBD-06E7-4D3E-86DD-C6635C154DC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
