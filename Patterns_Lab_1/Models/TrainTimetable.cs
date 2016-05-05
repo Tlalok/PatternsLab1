@@ -12,6 +12,7 @@ namespace Patterns_Lab_1.Models
     {
         public string Number { get; set; }
         public DateTime DepartureDate { get; set; }
+        public string DeparturePoint { get; set; }
         public string Destination { get; set; }
         public string DepartureStation { get; set; }
         public string DeparturePlatform { get; set; }
